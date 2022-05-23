@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+  application:
+    group: dragons
+    name: dragons-api
+  data:
+    mongodb:
+      database: test
+      port: 0
+  jackson:
+    default-property-inclusion: non-null
+    deserialization:
+      read-unknown-enum-values-as-null: true
+server:
+  port: 8080
