@@ -27,7 +27,7 @@ public class DragonController {
     @Autowired
     private DragonService dragonService;
 
-    @CrossOrigin(origins = "http://localhost:300")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/")
     @ApiOperation(value = "create Dragon")
     @ResponseStatus(HttpStatus.CREATED)
@@ -86,7 +86,7 @@ public class DragonController {
         return dragonDTO;
     }
 
-    @CrossOrigin(origins = "http://localhost:300")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(path = "/find")
     @ApiOperation(value = "get Dragon by name/type or all")
     @ResponseStatus(HttpStatus.OK)
