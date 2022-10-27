@@ -27,7 +27,7 @@ public class DragonController {
     @Autowired
     private DragonService dragonService;
 
-    @CrossOrigin(origins = "https://exercicio.vercel.app")
+    @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping("/")
     @ApiOperation(value = "create Dragon")
     @ResponseStatus(HttpStatus.CREATED)
@@ -86,7 +86,7 @@ public class DragonController {
         return dragonDTO;
     }
 
-    @CrossOrigin(origins = "https://exercicio.vercel.app")
+    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping(path = "/find")
     @ApiOperation(value = "get Dragon by name/type or all")
     @ResponseStatus(HttpStatus.OK)
